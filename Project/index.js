@@ -38,7 +38,7 @@ const inputVotes = document.querySelector('input#votes');
 const animalVotes = document.querySelector('span#vote-count');
 const form = document.querySelector('form#votes-form');
 
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', () => {
     e.preventDefault();
     console.log(currentAnimal);
     currentAnimal.votes += parseInt(e.target.votes.value, 10);
